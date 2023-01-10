@@ -1,0 +1,94 @@
+.meeting-container {
+    color: white;
+    width: 100%;
+    /* display: flex; */
+}
+
+.meeting-container>div,
+summary {
+    display: flex;
+    /* align-items: center; */
+    width: 100%;
+}
+
+.edit,
+.delete {
+    width: max(50px, 10%);
+    text-align: center;
+}
+
+details {
+    backdrop-filter: blur(7px) saturate(181%);
+    -webkit-backdrop-filter: blur(7px) saturate(181%);
+    background-color: rgba(17, 25, 40, 0.64);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+details summary {
+    /* background-color: grey; */
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.summary-heading{
+    margin-bottom: 15px;
+}
+.summary-heading,
+summary {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.meeting-name {
+    width: 50%;
+    text-align: center;
+}
+
+.time-date {
+    width: 30%;
+    text-align: center;
+}
+
+
+.meeting-other-info-container > div > div{
+    margin: 7.5px 0;
+}
+
+.meeting-other-info-container > div {
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.meeting-other-info-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.meeting-container>div>div {
+    text-align: center !important;
+
+}
+
+.meeting-info-div.active {
+    display: block;
+}
+
+.summary-heading {
+    font-weight: bold;
+}
+
+.invitation-cnt {
+    cursor: copy;
+}
+.meeting-invitation-title{
+    font-weight: bold;
+    border-bottom: 2px solid white;   
+    padding: 5px 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
